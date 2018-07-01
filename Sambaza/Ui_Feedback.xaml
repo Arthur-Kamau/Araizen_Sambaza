@@ -1,0 +1,33 @@
+﻿<Window x:Class="Sambaza.Ui_Feedback"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sambaza"
+        mc:Ignorable="d"
+        
+        Title="Feedback" Height="461" Width="400">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Height="414" Margin="43,10,47,7" Width="302" >
+        <Label Name="InternetStatus" Height="21"></Label>
+        <Label  Content="Email"  Margin="20,20,0,0"></Label>
+        <TextBox Name="EmailField" IsEnabled="False" Height="23" TextWrapping="Wrap" Margin="20,0,10,0" />
+        <Label Content="Date - Time"  Margin="20,20,0,0"></Label>
+        <Label Name="Now" Content=" "  Margin="20,0,0,20"></Label>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="TextFeedbackContents" Width="301" Margin="0,0,0,0" Height="162"
+                    TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                     AcceptsTab="True"
+                     SpellCheck.IsEnabled="True"
+                    HorizontalScrollBarVisibility="Disabled"
+                    VerticalScrollBarVisibility="Auto"
+                     >
+
+            </TextBox>
+        </StackPanel>
+
+        <Button Name="Submit" Click="Submit_Click" Content="Submit" BorderBrush="Transparent" Width="100" Margin="10,20,0,0"></Button>
+
+    </StackPanel>
+
+</Window>

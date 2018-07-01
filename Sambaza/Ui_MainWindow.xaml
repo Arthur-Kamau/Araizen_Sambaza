@@ -1,0 +1,106 @@
+﻿<Controls:MetroWindow
+        x:Class="Sambaza.Ui_MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sambaza"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"   
+        mc:Ignorable="d"
+        
+         Closing="Window_Closing"
+    
+        Title="Sambaza" Height="750" Width="900">
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <Button   x:Name="login"  Click="Login_Click">
+                <StackPanel   Orientation="Horizontal">
+
+                    <Image Source="./resources/images/ic_person_outline_black_24dp_1x.png" Height="15" Width="15" ></Image>
+                </StackPanel>
+            </Button>
+            <Button x:Name="feedback" Click="Feedback_Click">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="4 0 0 0"
+                   VerticalAlignment="Center"
+                   Text="Feedback" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFE6E6E6" />
+            <Setter Property="Width" Value="40" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="BorderBrush" Value="#FFE6E6E6" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal">
+
+        <StackPanel Margin="0,0,0,1" HorizontalAlignment="Left" Width="105" Background="White">
+
+            <Button Click="Quick_Menu_button_Click"  Margin="0,20,0,15" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_menu.png"></Image>
+                    <Label Content="Dashboard"></Label>
+                </StackPanel>
+            </Button>
+
+           
+
+            <Button Click="Main_Hotspot_Option_Connect_button_Click" Margin="0,10,0,10" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_wifi_tethering_2x.png"></Image>
+                    <Label Content="Hotspot  "></Label>
+                </StackPanel>
+            </Button>
+
+            <Button Name="Send" Click="Send_Click" Margin="0,10,0,10" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_send_black_24dp_2x.png"></Image>
+                    <Label Content="Send     "></Label>
+                </StackPanel>
+            </Button>
+            <Button Click="Public_button_Click" Margin="0,10,0,10" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_folder_shared_black_24dp_2x.png"></Image>
+                    <Label Content="Public   "></Label>
+                </StackPanel>
+            </Button>
+
+
+            
+
+            <Button Click="Transfer_History_Option_Click" Margin="0,10,0,10"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_history_3x.png"></Image>
+                    <Label Content="History   "></Label>
+                </StackPanel>
+            </Button>
+            <Button Click="User_Map_button_Click" Opacity="0" Margin="0,10,0,10"  Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_supervisor_account_3x.png"></Image>
+                    <Label Content="Map    "></Label>
+                </StackPanel>
+            </Button>
+
+            <Button Click="Settings_button_Click" Margin="0,205,0,0"   Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="42">
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="25" Width="25" Source="./resources/images/ic_settings_2x.png"></Image>
+                    <Label Content="Settings   "></Label>
+                </StackPanel>
+            </Button>
+
+        </StackPanel>
+
+        <Frame x:Name="content_container" Margin="0,0,0,0" Width="785" Height="720" Background="White" NavigationUIVisibility="Hidden"/>
+
+    </StackPanel>
+</Controls:MetroWindow>
+

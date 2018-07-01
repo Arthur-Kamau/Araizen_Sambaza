@@ -1,0 +1,54 @@
+﻿<Page x:Class="Sambaza.Ui_Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sambaza"
+      mc:Ignorable="d" 
+         
+      d:DesignHeight="720" d:DesignWidth="785"
+      Title="Menu">
+    <StackPanel Background="White">
+
+        <Label Content="    Access Panel" FontSize="32" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="246"/>
+        <StackPanel Orientation="Vertical" Height="273" Background="LightGray" Margin="10,6,0,0" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Araizen Crypto" FontSize="23" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Height="40" Width="223"/>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" Height="31">
+                <Label Content="Crypto Operations" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label Content=""   x:Name="Crypto_Oerations" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="198" Height="29"/>
+
+                <Label Content=".Net Platform" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Width="85"/>
+                <Label Content=""  x:Name="dot_net_platform" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="243"/>
+
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" Height="31">
+                <Label Content="Internet Connection" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Height="28" Width="123"/>
+                <Label Content=""  x:Name="is_active_internet_connection" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Height="28" Width="198"/>
+
+                <Label Content="OS Version" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top" Width="85"/>
+                <Label Content=""  x:Name="os_version" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="243"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Content="App Verions" x:Name="App_Version_Text" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label Content=""  x:Name="App_Version" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="193"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,10,0">
+                <Label Content="App Build" x:Name="App_Build_Text" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Width="116"/>
+                <Label Content=""  x:Name="App_Build" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="198" Height="27"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Label Content="Default Public Folder" HorizontalAlignment="Left" Margin="30,0,0,0" VerticalAlignment="Top" Height="23" Width="123"/>
+                <Label Content="" x:Name="path_to_public_folder" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="660" Height="28"/>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>
+
+
+  

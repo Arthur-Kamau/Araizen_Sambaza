@@ -1,0 +1,21 @@
+﻿<Page x:Class="Sambaza.Ui_HostspotOptions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sambaza"
+      mc:Ignorable="d" 
+
+      d:DesignHeight="720" d:DesignWidth="785"
+      Title="Hostspot Options">
+    <StackPanel Orientation="Vertical" Background="White">
+       
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="164">
+                <Button Name="StartHotspot" BorderBrush="Transparent" Click="StartHotspot_Click" Height="34" Margin="20,30,10,0" Content="Start" Background="LightGray"></Button>
+                <Button Name="ConnectHotspot" BorderBrush="Transparent" Click="ConnectHotspot_Click" Height="37" Margin="20,30,10,0" Content="Connect" Background="Transparent"></Button>
+            </StackPanel>
+            <Frame x:Name="HotSpotOptionsContent" Width="620" Height="685"></Frame>
+        </StackPanel>
+    </StackPanel>
+</Page>

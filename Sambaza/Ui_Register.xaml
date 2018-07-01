@@ -1,0 +1,36 @@
+﻿<Window x:Class="Sambaza.Ui_Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sambaza"
+        mc:Ignorable="d"
+        WindowStyle="ThreeDBorderWindow"
+        Title="Register" Height="550" Width="400">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Height="514" Margin="48,0,25,6" Width="319" >
+        <Label Content="" Name="Status" Height="27"/>
+        <Label Content="To Register, enter the following details"  Margin="10,20,0,0"></Label>
+        <Label Content="Enter Your name"  Margin="20,20,0,0"></Label>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="name" KeyUp="name_KeyUp" Width="232" Margin="10,20,0,0"></TextBox>
+            <Image Height="25" Width="25" Name="IsNameOk" Margin="10,20,0,0"></Image>
+        </StackPanel>
+        <Label Content="Enter your email"  Margin="20,20,0,0"></Label>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="email" KeyUp="email_KeyUp" Width="232" Margin="10,20,0,0"></TextBox>
+            <Image Height="25" Width="25" Name="IsemailOk" Margin="10,20,0,0"></Image>
+        </StackPanel>
+        <Label Content="Enter your Password"  Margin="20,20,0,0"></Label>
+        <StackPanel Orientation="Horizontal">
+            <PasswordBox  Name="mypassword" KeyUp="password_KeyUp" Width="232" Margin="10,20,0,0"></PasswordBox>
+            <Image Height="25" Width="25" Name="IspasswordOk" Margin="10,20,0,0"></Image>
+        </StackPanel>
+        <Label Content="Confirm your password"  Margin="20,20,0,0"></Label>
+        <StackPanel Orientation="Horizontal">
+            <PasswordBox Name="mypasswordconfirm" KeyUp="mypasswordconfirm_KeyUp" Width="232" Margin="10,20,0,0"></PasswordBox>
+            <Image Height="25" Width="25" Name="IsConfirmPasswordOk" Margin="10,20,0,0"></Image>
+        </StackPanel>
+        <Button Name="submit" Click="submit_Click" BorderBrush="Transparent"  Content="Submit" Width="100" Margin="10,20,0,0"></Button>
+    </StackPanel>
+
+</Window>

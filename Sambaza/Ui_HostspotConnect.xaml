@@ -1,0 +1,48 @@
+﻿<Page x:Class="Sambaza.Ui_HostspotConnect"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sambaza"
+      mc:Ignorable="d" 
+      d:DesignHeight="685" d:DesignWidth="620"
+      Title="Connect">
+
+    <StackPanel Orientation="Vertical" Background="LightGray">
+        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Height="30" Width="254">
+            <Label Content="Connect to Hotspot" FontSize="15" Width="254"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="94,0,114,0" Width="412">
+            <Label Name="ErrorItem" Margin="20,5,20,10"  FontSize="8" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="" Width="375" Height="24"></Label>
+        </StackPanel>
+        <StackPanel Margin="0,20,0,20" Orientation="Horizontal" HorizontalAlignment="Left" >
+            <Label Margin="20,0,0,0" x:Name="hotspot_name_label" Content="Hotspot Name" Width="132" Height="25"></Label>
+            <ComboBox Margin="20,0,0,0" x:Name="wifi_name_combobox"  SelectionChanged="wifi_name_combobox_SelectionChanged"  Height="30" Width="300.649"/>
+            <StackPanel Margin="10,0,0,0">
+                <Label Content="Strength  :0 %" Name="WifiStrength"></Label>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Margin="20,0,0,0"  x:Name="hotspot_password_label" Content="Password" Width="132" Height="25" ></Label>
+            <PasswordBox Margin="20,0,0,0" x:Name="wifi_password_textbox" Height="30" Width="200.649"/>
+            <Label Margin="110,0,0,0" Name="Protection" Content="Protection : None "></Label>
+        </StackPanel>
+        <StackPanel>
+            <Button  Margin="10,40,0,0" Background="Transparent" BorderThickness="0" Content="submit" x:Name="HotSpot_Connect" Click="HotSpot_Connect_Click" HorizontalAlignment="Center" Width="100" Height="30"></Button>
+        </StackPanel>
+        <Separator BorderThickness="5" Margin="0,5,5,0"></Separator>
+        <StackPanel>
+            <Label Content="Details"></Label>
+            <TextBox x:Name="Details" Height="302" Width="600" Background="White"
+                 IsEnabled="False"
+                   TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                     AcceptsTab="True"
+                     SpellCheck.IsEnabled="True"
+                    HorizontalScrollBarVisibility="Disabled"
+                    VerticalScrollBarVisibility="Auto"
+                   ></TextBox>
+        </StackPanel>
+    </StackPanel>
+</Page>
+

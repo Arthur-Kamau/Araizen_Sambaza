@@ -1,0 +1,35 @@
+﻿<Window x:Class="Sambaza.Ui_ForgotPasswod_ChangePasskey"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sambaza"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        Title="Change Password" Height="450" Width="400">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical" Width="353" Height="244">
+            <Label Margin="0,15,0,15" Name="Status" Height="30"></Label>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Enter Your new Passkey"></Label>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                    <PasswordBox Name="Passkey" KeyUp="Passkey_KeyUp" Width="250" Height="28" ></PasswordBox>
+                    <Image Height="25" Width="25" Name="IsPasskeyOk" Margin="10,4,0,0"></Image>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Confirm Passkey Entered above"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <PasswordBox KeyUp="PasskeyConfirm_KeyUp" Width="250" Height="28" Name="PasskeyConfirm"></PasswordBox>
+                    <Image Height="25" Width="25" Name="IsConfirmPasskeyOk" Margin="10,4,0,0"></Image>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="0,20,0,10" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="Submit" Click="Submit_Click" Content="Submit" Background="Transparent" BorderBrush="Transparent"></Button>
+            </StackPanel>
+
+        </StackPanel>
+    </StackPanel>
+</Window>

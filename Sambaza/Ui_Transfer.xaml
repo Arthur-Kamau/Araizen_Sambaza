@@ -1,0 +1,34 @@
+﻿<Page x:Class="Sambaza.Ui_Transfer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sambaza"
+      mc:Ignorable="d" 
+      
+      d:DesignHeight="720" d:DesignWidth="785"
+      Title="Ui_Transfer">
+
+    <StackPanel Orientation="Vertical" Background="LightGray" >
+        <StackPanel Margin="60,0,0,0">
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Height="30" Margin="203,0,250,0" Width="254">
+                <Label Content="    Transfer Files and Folder Contents" FontSize="15" Width="254"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,0,20,0">
+                <Label Content="Send To Whom"></Label>
+                <ComboBox Width="300" HorizontalAlignment="Left"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,20,0,0" HorizontalAlignment="Left">
+                <Button Name="send_select_Folder" Click="Send_select_Folder_Click" Content="Folder" Width="80" ></Button>
+                <Button Name="send_select_File" Click="Send_select_File_Click"  Content="File" Width="80" Margin="10,0,0,0"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,10,0,0">
+                <Label Content="Selected items" Margin="100,0,0,0"></Label>
+                <ListBox Name="DecryptItemList" Height="333" Margin="47,0,63,0"></ListBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Send" Name="Send" Click="Send_Click" Margin="0,20,100,10" Height="32" Width="90"></Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>
